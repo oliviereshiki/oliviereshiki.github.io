@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LAB-001 | Microsoft Entra ID</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <!-- En-tête -->
+    <header class="bg-primary text-white py-5">
+        <div class="container">
+            <h1>LAB-001 — Microsoft Entra ID</h1>
+            <p class="lead">
+                Administration des identités et des groupes de sécurité
+            </p>
+        </div>
+    </header>
+
+
+    <!-- Capture du laboratoire -->
+    <section class="card shadow-sm mb-4">
+        <div class="card-body">
+
+            <h2>Vérification des appartenances</h2>
+
+            <p>
+                Cette capture montre que l'utilisateur fictif
+                Marc Dupont appartient au groupe de sécurité
+                GRP-Support-IT dans Microsoft Entra ID.
+            </p>
+
+            <img src="images/lab001-groupes.png" class="img-fluid rounded border"
+                alt="Marc Dupont membre du groupe GRP-Support-IT">
+
+            <p class="text-muted mt-3">
+                Figure 1 — Vérification des groupes
+                d'un utilisateur dans Microsoft Entra ID.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Contenu principal -->
+    <main class="container my-5">
+
+        <a href="index.html" class="btn btn-outline-primary mb-4">
+            Retour au portfolio
+        </a>
+
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2>Présentation du laboratoire</h2>
+
+                <p>
+                    Dans le cadre de ma formation en administration
+                    Microsoft 365, j'ai réalisé un laboratoire pratique
+                    avec Microsoft Entra ID Free.
+                </p>
+
+                <p>
+                    L'objectif était de simuler l'arrivée d'un nouveau
+                    collaborateur dans une entreprise fictive,
+                    AlpinaTech SA.
+                </p>
+            </div>
+        </section>
+
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2>Manipulations réalisées</h2>
+
+                <ul>
+                    <li>Création d'un utilisateur : Marc Dupont</li>
+                    <li>Configuration des attributs professionnels</li>
+                    <li>Création du groupe GRP-Support-IT</li>
+                    <li>Ajout de Marc Dupont au groupe</li>
+                    <li>Consultation des rôles administratifs</li>
+                    <li>Diagnostic des autorisations de l'utilisateur</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2>Résultat du diagnostic</h2>
+
+                <p>
+                    L'utilisateur appartient au groupe de sécurité
+                    GRP-Support-IT, mais ne possède aucun rôle
+                    administratif Microsoft Entra ID.
+                </p>
+
+                <p>
+                    Cette vérification illustre le principe du moindre
+                    privilège et le contrôle d'accès basé sur les rôles
+                    (RBAC).
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p class="mb-0">Portfolio informatique — Laboratoire LAB-001</p>
+    </footer>
+
+</body>
+
+</html>
